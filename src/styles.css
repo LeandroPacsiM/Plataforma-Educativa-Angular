@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg: #ffffff;
+  --bg-alt: #f8fafc;
+  --fg: #0f172a;
+  --fg-muted: #475569;
+  --fg-subtle: #64748b;
+  --border: #e2e8f0;
+  --border-light: #f1f5f9;
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --primary-bg: #eef2ff;
+  --card: #ffffff;
+  --danger: #dc2626;
+  --danger-bg: #fef2f2;
+  --overlay: rgba(0,0,0,0.05);
+  --success: #059669;
+  --success-bg: #ecfdf5;
+}
+
+.dark {
+  --bg: #0f172a;
+  --bg-alt: #020617;
+  --fg: #f8fafc;
+  --fg-muted: #94a3b8;
+  --fg-subtle: #64748b;
+  --border: #334155;
+  --border-light: #1e293b;
+  --primary: #818cf8;
+  --primary-hover: #6366f1;
+  --primary-bg: #1e1b4b;
+  --card: #1e293b;
+  --danger: #fca5a5;
+  --danger-bg: #450a0a;
+  --overlay: rgba(0,0,0,0.3);
+  --success: #34d399;
+  --success-bg: rgba(4, 120, 87, 0.15);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+  transition: background 0.2s, color 0.2s;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
